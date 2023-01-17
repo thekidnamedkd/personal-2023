@@ -1,16 +1,73 @@
-import { Grid } from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/react";
 
-import CTASection from "./components/CTASection";
-import SomeImage from "./components/SomeImage";
-import SomeText from "./components/SomeText";
+import LinkOut from "lib/components/LinkOut";
+import ListCluster from "lib/components/ListCluster";
 
 const Home = () => {
   return (
-    <Grid gap={4}>
-      <SomeText />
-      <SomeImage />
-      <CTASection />
-    </Grid>
+    <VStack flexDirection="column" align="start" spacing="5">
+      <ListCluster title="Lately">
+        <LinkOut
+          href="https://launch.seedclub.xyz/"
+          title="Seed Club: Launch"
+          description="DAO launch platform based on Nouns Builder, Public Assembly tooling"
+          tools="Next.js, ReactQuery, SIWE, Apollo"
+        />
+        <LinkOut
+          href="https://members.seedclub.xyz/"
+          title="Seed Club: Member Network"
+          description="Community media platform for a post-Discord world"
+          tools="Next.js, SWR, NextAuth, Postgres"
+        />
+        <LinkOut
+          href="https://clubgoods.xyz/"
+          title="Seed Club: Club Goods"
+          description="DAO launch platform based on Nouns Builder, Public Assembly tooling"
+          tools="Next.js, Lit Protocol, iron-auth, web3 Shopify API"
+        />
+        <LinkOut
+          href="https://www.joy.world/"
+          title="JOYWORLD"
+          description="Mixed reality art studio hub using web3 as part of its creative stack"
+          tools="React app overhaul, 3D modeling, XR tooling, AWS (S3, Lambda, Event Bridge)"
+        />
+      </ListCluster>
+      <ListCluster title="Less Lately">
+        <LinkOut
+          href="https://cryptosociety.notion.site/Crypto-Culture-Society-6a8dd5ee05b04684998b5206ae842195"
+          title="Crypto, Culture & Society DAO Member"
+        />
+        <LinkOut
+          href="https://courses.consensys.net/courses/blockchain-developer-bootcamp-registration-2021"
+          title="ConsenSys Ethereum Certified"
+        />
+        <LinkOut
+          href="https://elektra.camp/"
+          title="Songcamp: Elektra Developer"
+        />
+        <LinkOut
+          href="https://www.kernel.community/"
+          title="KERNEL KBIII Fellow"
+        />
+      </ListCluster>
+      <ListCluster title="Less Lately">
+        <LinkOut
+          href="https://cryptosociety.notion.site/Crypto-Culture-Society-6a8dd5ee05b04684998b5206ae842195"
+          title="Kamp Grizzly Agency Production Assistant"
+        />
+        <LinkOut
+          href="https://courses.consensys.net/courses/blockchain-developer-bootcamp-registration-2021"
+          title="Red Bull Music Academy Production Lead"
+        />
+      </ListCluster>
+
+      <ListCluster title="Less Lately">
+        <LinkOut
+          href="https://www.tellallyourfriendspr.com/allartists"
+          title="National Publicist & Artist Manager "
+        />
+      </ListCluster>
+    </VStack>
   );
 };
 

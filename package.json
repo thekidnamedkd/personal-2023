@@ -1,8 +1,9 @@
 {
-  "name": "vite-react-chakra-starter",
+  "name": "kd-personal-2023",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
-  "author": "sozonome",
+  "author": "thekidnamedkd",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -25,14 +26,18 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@fontsource/plus-jakarta-sans": "^4.5.10",
+    "@types/lodash": "^4.14.191",
     "framer-motion": "^8.1.7",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
+    "react-query": "^3.39.2",
     "react-router-dom": "^6.6.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.12",
     "@commitlint/config-conventional": "^17.4.0",
     "@types/node": "^18.11.18",
     "@types/react": "18.0.26",

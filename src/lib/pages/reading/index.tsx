@@ -14,7 +14,7 @@ const Reading = () => {
       />
       <LinkOut
         href="https://www.furtherfield.org/radical-friends-book/"
-        title="Ruth Catlow & Penny Rafferty - Decentralised Autonomous Organisations and the Arts"
+        title="Ruth Catlow & Penny Rafferty - Radical Friends: Decentralised Autonomous Organisations and the Arts"
       />
       <LinkOut
         href="https://www.goodreads.com/book/show/34811965-poes-a-reunida"

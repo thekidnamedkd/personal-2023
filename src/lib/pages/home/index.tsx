@@ -6,7 +6,7 @@ import ListCluster from "lib/components/ListCluster";
 const Home = () => {
   return (
     <VStack flexDirection="column" align="start" spacing="5">
-      <ListCluster title="Lately">
+      <ListCluster title="Most Recent">
         <LinkOut
           href="https://launch.seedclub.xyz/"
           title="Seed Club: Launch"
@@ -32,7 +32,7 @@ const Home = () => {
           tools="React app overhaul, 3D modeling, XR tooling, AWS (S3, Lambda, Event Bridge)"
         />
       </ListCluster>
-      <ListCluster title="Less Lately">
+      <ListCluster title="Lately">
         <LinkOut
           href="https://cryptosociety.notion.site/Crypto-Culture-Society-6a8dd5ee05b04684998b5206ae842195"
           title="Crypto, Culture & Society DAO Member"
@@ -47,7 +47,7 @@ const Home = () => {
         />
         <LinkOut
           href="https://www.kernel.community/"
-          title="KERNEL KBIII Fellow"
+          title="KERNEL KB3 Fellow"
         />
       </ListCluster>
       <ListCluster title="Less Lately">
@@ -61,7 +61,7 @@ const Home = () => {
         />
       </ListCluster>
 
-      <ListCluster title="Less Lately">
+      <ListCluster title="Awhile Ago">
         <LinkOut
           href="https://www.tellallyourfriendspr.com/allartists"
           title="National Publicist & Artist Manager "

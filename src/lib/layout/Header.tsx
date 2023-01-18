@@ -14,11 +14,11 @@ import _ from "lodash";
 import { useNavigate } from "react-router-dom";
 
 import useGasQuery from "../../utils/useGasQuery";
+import Navigation from "./Navigation";
 
 const Header = () => {
   const navigate = useNavigate();
   const { data: gasPrice } = useGasQuery();
-
   const currentGas = _.get(gasPrice, "result.ProposeGasPrice");
 
   return (
@@ -57,15 +57,7 @@ const Header = () => {
         </VStack>
       </HStack>
       <Spacer />
-      <HStack
-        mt={["24px", null, null, null]}
-        alignItems="end"
-        justifyContent="right"
-        w={["100%", null, null, "min-content"]}
-      >
-        <Button onClick={() => navigate("/#")}>Work</Button>
-        <Button onClick={() => navigate("/reading/#")}>Reading</Button>
-      </HStack>
+      <Navigation />
     </Flex>
   );
 };

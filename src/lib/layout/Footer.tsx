@@ -1,4 +1,4 @@
-import { HStack, Icon, Link, Text, VStack } from "@chakra-ui/react";
+import { HStack, Icon, Link, Text } from "@chakra-ui/react";
 import { RiGithubLine, RiMailLine, RiTwitterLine } from "react-icons/ri";
 
 const Footer = () => {

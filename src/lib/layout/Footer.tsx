@@ -13,7 +13,7 @@ const Footer = () => {
     <>
       <HStack marginLeft="auto" align="center" justify="space-between">
         <Text fontSize={["sm", null, null, "md"]}>
-          HTTP:{" "}
+          VERCEL/DNS:{" "}
           <Link
             fontSize={["sm", null, null, "md"]}
             href="https://kevin-davis.com"
@@ -25,7 +25,7 @@ const Footer = () => {
       <HStack marginLeft="auto" align="center" justify="space-between">
         <Text fontSize={["sm", null, null, "md"]}>
           IPFS/ENS:{" "}
-          <Link fontSize={["sm", null, null, "md"]} href="heykd.eth">
+          <Link fontSize={["sm", null, null, "md"]} href="https://heykd.eth">
             heykd.eth
           </Link>
         </Text>

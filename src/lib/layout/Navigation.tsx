@@ -13,19 +13,23 @@ const Navigation = () => {
       w={["100%", null, null, "min-content"]}
     >
       <Button
-        onClick={() => navigate("/#")}
-        textDecoration={location.pathname === "/" ? "underline" : "none"}
+        onClick={() => navigate("/")}
         boxShadow={location.pathname === "/" ? "inset 0 0 2px #333333" : "none"}
+        border={
+          location.pathname === "/" ? "2px solid black" : "1px solid black"
+        }
       >
         Work
       </Button>
       <Button
-        onClick={() => navigate("/reading/#")}
-        textDecoration={
-          location.pathname === "/reading/" ? "underline" : "none"
-        }
+        onClick={() => navigate("/reading")}
         boxShadow={
-          location.pathname === "/reading/" ? "inset 0 0 2px #333333" : "none"
+          location.pathname === "/reading" ? "inset 0 0 2px #333333" : "none"
+        }
+        border={
+          location.pathname === "/reading"
+            ? "2px solid black"
+            : "1px solid black"
         }
       >
         Reading

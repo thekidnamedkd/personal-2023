@@ -49,8 +49,9 @@ const Layout = ({ children }: LayoutProps) => {
       >
         <Header />
         <Box
+          id="#"
           width="full"
-          height="min-content"
+          height={["min-content", "min-content", "full", "full"]}
           as="main"
           overflowY={["visible", "visible", "scroll", "scroll"]}
           bg="white"

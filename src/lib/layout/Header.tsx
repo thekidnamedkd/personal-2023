@@ -63,8 +63,8 @@ const Header = () => {
         justifyContent="right"
         w={["100%", null, null, "min-content"]}
       >
-        <Button onClick={() => navigate("/")}>Work</Button>
-        <Button onClick={() => navigate("/reading")}>Reading</Button>
+        <Button onClick={() => navigate("/#")}>Work</Button>
+        <Button onClick={() => navigate("/reading/#")}>Reading</Button>
       </HStack>
     </Flex>
   );

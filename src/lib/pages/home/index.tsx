@@ -38,6 +38,10 @@ const Home = () => {
           title="Crypto, Culture & Society DAO Member"
         />
         <LinkOut
+          href="https://cryptosociety.notion.site/Crypto-Culture-Society-6a8dd5ee05b04684998b5206ae842195"
+          title="Developer DAO Member"
+        />
+        <LinkOut
           href="https://courses.consensys.net/courses/blockchain-developer-bootcamp-registration-2021"
           title="ConsenSys Ethereum Certified"
         />
@@ -53,18 +57,18 @@ const Home = () => {
       <ListCluster title="Less Lately">
         <LinkOut
           href="https://cryptosociety.notion.site/Crypto-Culture-Society-6a8dd5ee05b04684998b5206ae842195"
-          title="Kamp Grizzly Agency Production Assistant"
+          title="Kamp Grizzly Production Assistant"
         />
         <LinkOut
-          href="https://courses.consensys.net/courses/blockchain-developer-bootcamp-registration-2021"
-          title="Red Bull Music Academy Production Lead"
+          href="https://www.redbull.com/us-en/events/red-bull-music-presents-portland"
+          title="Red Bull Music Production Lead"
         />
       </ListCluster>
 
       <ListCluster title="Awhile Ago">
         <LinkOut
           href="https://www.tellallyourfriendspr.com/allartists"
-          title="National Publicist & Artist Manager "
+          title="National Publicist & Artist Manager"
         />
       </ListCluster>
     </VStack>

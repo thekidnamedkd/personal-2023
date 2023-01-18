@@ -17,6 +17,8 @@ const Fonts = () => (
       /* heading secondary */
       @font-face {
         font-family: 'Sysfont';
+        font-style: normal;
+        font-weight: 800;
         src: url('/fonts/sysfont.woff2') format('woff2'),
         url('/fonts/sysfont.woff') format('woff');
         font-weight: normal;

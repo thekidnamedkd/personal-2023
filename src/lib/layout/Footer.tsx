@@ -1,18 +1,30 @@
-import { HStack, Icon, Link, Text } from "@chakra-ui/react";
+import { HStack, Icon, Link, Text, VStack } from "@chakra-ui/react";
 import { RiGithubLine, RiMailLine, RiTwitterLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
     <>
       <HStack marginLeft="auto" align="center" justify="space-between">
-        <Text fontSize={["md", null, null, "lg"]}>
-          {new Date().getFullYear()} -{" "}
+        <Text fontSize={["sm", null, null, "lg"]}>
+          HTTP:{" "}
           <Link
-            fontSize={["md", null, null, "lg"]}
+            fontSize={["sm", null, null, "lg"]}
             href="https://kevin-davis.com"
             isExternal
           >
             kevin-davis.com
+          </Link>
+        </Text>
+      </HStack>
+      <HStack marginLeft="auto" align="center" justify="space-between">
+        <Text fontSize={["sm", null, null, "lg"]}>
+          IPFS/ENS:{" "}
+          <Link
+            fontSize={["sm", null, null, "lg"]}
+            href="https://heykd.eth"
+            isExternal
+          >
+            heykd.eth
           </Link>
         </Text>
       </HStack>

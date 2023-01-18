@@ -12,30 +12,34 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <Box
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-      minH="100vh"
-      minW="100vw"
-      bgColor="#e0ac00"
+      position="absolute"
+      top="50%"
+      left="50%"
+      transform="translate(-50%, -50%)"
     >
       <Meta />
       <Flex
         justifyContent="space-between"
         alignItems="start"
         flexDirection="column"
+        overflowY="scroll"
+        sx={{
+          "::-webkit-scrollbar": {
+            width: "6px",
+          },
+          "::-webkit-scrollbar-thumb": {
+            background: "black",
+            borderRadius: "10px",
+            border: "2px solid #dddddd",
+          },
+        }}
         w={[
           "calc(100vw - 1rem)",
           "calc(100vw - 5rem)",
           "calc(100vw - 8rem)",
           "calc(100vw - 20rem)",
         ]}
-        h={[
-          "calc(100vh - 1rem)",
-          "calc(100vh - 5rem)",
-          "calc(100vh - 8rem)",
-          "calc(100vh-10rem)",
-        ]}
+        h={["calc(95vh)"]}
         border="2px solid"
         borderRadius="3px"
         p="24px"
@@ -44,12 +48,11 @@ const Layout = ({ children }: LayoutProps) => {
         boxShadow="dark-lg"
       >
         <Header />
-
         <Box
           width="full"
-          height="full"
+          height="min-content"
           as="main"
-          overflowY="scroll"
+          overflowY={["visible", "visible", "scroll", "scroll"]}
           bg="white"
           border="2px solid"
           my="24px"

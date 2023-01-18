@@ -1,29 +1,24 @@
 import { HStack, Icon, Link, Text } from "@chakra-ui/react";
-import { RiGithubLine, RiMailLine, RiTwitterLine } from "react-icons/ri";
+import { RiGithubFill, RiMailLine, RiTwitterFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
     <>
       <HStack marginLeft="auto" align="center" justify="space-between">
-        <Text fontSize={["sm", null, null, "lg"]}>
+        <Text fontSize={["sm", null, null, "md"]}>
           HTTP:{" "}
           <Link
-            fontSize={["sm", null, null, "lg"]}
+            fontSize={["sm", null, null, "md"]}
             href="https://kevin-davis.com"
-            isExternal
           >
             kevin-davis.com
           </Link>
         </Text>
       </HStack>
       <HStack marginLeft="auto" align="center" justify="space-between">
-        <Text fontSize={["sm", null, null, "lg"]}>
+        <Text fontSize={["sm", null, null, "md"]}>
           IPFS/ENS:{" "}
-          <Link
-            fontSize={["sm", null, null, "lg"]}
-            href="https://heykd.eth"
-            isExternal
-          >
+          <Link fontSize={["sm", null, null, "md"]} href="https://heykd.eth">
             heykd.eth
           </Link>
         </Text>
@@ -37,7 +32,7 @@ const Footer = () => {
         >
           <Icon
             cursor="pointer"
-            as={RiGithubLine}
+            as={RiGithubFill}
             minW="28px"
             w="1vw"
             h="auto"
@@ -49,7 +44,7 @@ const Footer = () => {
           color="black"
           lineHeight="0"
         >
-          <Icon as={RiTwitterLine} minW="28px" w="1vw" h="auto" />
+          <Icon as={RiTwitterFill} minW="28px" w="1vw" h="auto" />
         </Link>
         <Link
           href="mailto:whomst@kevind.xyz"

@@ -10,7 +10,7 @@ type Props = {
 const LinkOut = ({ href, title, description, tools }: Props) => {
   return (
     <Box pb="8px">
-      <Link fontSize={["lg", null, null, "xl"]} href={href} target="_blank">
+      <Link fontSize={["lg", null, null, "xl"]} href={href} isExternal>
         {title} ⧉
       </Link>
       {description && (

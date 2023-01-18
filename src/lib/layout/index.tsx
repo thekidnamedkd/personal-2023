@@ -39,7 +39,6 @@ const Layout = ({ children }: LayoutProps) => {
         border="2px solid"
         borderRadius="3px"
         p="24px"
-        pl={["32px", "32px", null, null]}
         bg="#dddddd"
         boxShadow="dark-lg"
       >
@@ -52,7 +51,7 @@ const Layout = ({ children }: LayoutProps) => {
           overflowY={["visible", "visible", "scroll", "scroll"]}
           bg="white"
           border="2px solid"
-          boxShadow="inset 0 0 3px black"
+          boxShadow="inset 0 0 px black"
           my="24px"
           p="14px"
           sx={{

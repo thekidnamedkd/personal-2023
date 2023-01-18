@@ -33,13 +33,8 @@ const Layout = ({ children }: LayoutProps) => {
             border: "2px solid #dddddd",
           },
         }}
-        w={[
-          "calc(100vw - 1rem)",
-          "calc(100vw - 5rem)",
-          "calc(100vw - 8rem)",
-          "calc(100vw - 20rem)",
-        ]}
-        h={["calc(95vh)"]}
+        w={["93vw", "90vw", null, "82vw"]}
+        h={["95vh", "90vh", null, "82vh"]}
         border="2px solid"
         borderRadius="3px"
         p="24px"

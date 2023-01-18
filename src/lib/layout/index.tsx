@@ -51,7 +51,7 @@ const Layout = ({ children }: LayoutProps) => {
           overflowY={["visible", "visible", "scroll", "scroll"]}
           bg="white"
           border="2px solid"
-          boxShadow="inset 0 0 px black"
+          boxShadow="inset 0 0 2px black"
           my="24px"
           p="14px"
           sx={{

@@ -38,7 +38,7 @@ const Header = () => {
           </Box>
         </Button>
         <VStack pl={["12px", null, null, "24px"]} align="start">
-          <Heading size={["xl", null, null, "2xl"]}>Kevin Davis</Heading>
+          <Heading size={["lg", null, null, "2xl"]}>Kevin Davis</Heading>
 
           <Link
             href="https://twitter.com/thekidnamedkd"

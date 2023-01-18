@@ -25,7 +25,7 @@ const Footer = () => {
       <HStack marginLeft="auto" align="center" justify="space-between">
         <Text fontSize={["sm", null, null, "md"]}>
           IPFS/ENS:{" "}
-          <Link fontSize={["sm", null, null, "md"]} href="https://heykd.eth">
+          <Link fontSize={["sm", null, null, "md"]} href="heykd.eth">
             heykd.eth
           </Link>
         </Text>
@@ -38,9 +38,9 @@ const Footer = () => {
       >
         <Link
           href="https://github.com/thekidnamedkd"
-          target="_blank"
           color="black"
           lineHeight="0"
+          isExternal
         >
           <Icon
             cursor="pointer"
@@ -52,33 +52,33 @@ const Footer = () => {
         </Link>
         <Link
           href="https://www.twitter.com/thekidnamedkd"
-          target="_blank"
           color="black"
           lineHeight="0"
+          isExternal
         >
           <Icon as={RiTwitterFill} minW="28px" w="1vw" h="auto" />
         </Link>
         <Link
           href="https://open.spotify.com/user/kidnamedkd"
-          target="_blank"
           color="black"
           lineHeight="0"
+          isExternal
         >
           <Icon as={RiSpotifyFill} minW="28px" w="1vw" h="auto" />
         </Link>
         <Link
           href="https://www.are.na/kevin-davis"
-          target="_blank"
           color="black"
           lineHeight="0"
+          isExternal
         >
           <Icon as={ArenaIcon} minW="28px" w="1vw" h="auto" />
         </Link>
         <Link
           href="mailto:whomst@kevind.xyz"
-          target="_blank"
           color="black"
           lineHeight="0"
+          isExternal
         >
           <Icon as={RiMailLine} minW="28px" w="1vw" h="auto" />
         </Link>

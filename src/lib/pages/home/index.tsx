@@ -11,19 +11,19 @@ const Home = () => {
           href="https://launch.seedclub.xyz/"
           title="Seed Club: Launch"
           description="DAO launch platform based on Nouns Builder, Public Assembly tooling"
-          tools="Next.js, ReactQuery, SIWE, Apollo"
+          tools="Next.js, React Query, SIWE, Apollo, GQL"
         />
         <LinkOut
           href="https://members.seedclub.xyz/"
           title="Seed Club: Member Network"
           description="Community media platform for a post-Discord world"
-          tools="Next.js, SWR, NextAuth, Postgres"
+          tools="Next.js, SWR, NextAuth, Chakra, Postgres"
         />
         <LinkOut
           href="https://clubgoods.xyz/"
           title="Seed Club: Club Goods"
           description="DAO launch platform based on Nouns Builder, Public Assembly tooling"
-          tools="Next.js, Lit Protocol, iron-auth, web3 Shopify API"
+          tools="Next.js, Lit Protocol, iron-session, web3 Shopify API"
         />
         <LinkOut
           href="https://www.joy.world/"

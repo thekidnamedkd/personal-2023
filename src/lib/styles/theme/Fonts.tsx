@@ -24,6 +24,11 @@ const Fonts = () => (
         font-weight: normal;
         font-style: normal;
       }
+      @font-face {
+        font-family: 'SourceCodePro';
+        font-style: normal;
+        src: url('/fonts/sysfont.ttf') format('TrueType'),
+      }
       `}
   />
 );

@@ -25,12 +25,13 @@ const Layout = ({ children }: LayoutProps) => {
         overflowY="scroll"
         sx={{
           "::-webkit-scrollbar": {
-            width: "6px",
+            width: "10px",
           },
           "::-webkit-scrollbar-thumb": {
             background: "black",
             borderRadius: "10px",
-            border: "2px solid #dddddd",
+            border: "4px solid transparent",
+            backgroundClip: "padding-box",
           },
         }}
         w={["93vw", "90vw", null, "82vw"]}
@@ -38,6 +39,7 @@ const Layout = ({ children }: LayoutProps) => {
         border="2px solid"
         borderRadius="3px"
         p="24px"
+        pl={["32px", "32px", null, null]}
         bg="#dddddd"
         boxShadow="dark-lg"
       >
@@ -50,17 +52,18 @@ const Layout = ({ children }: LayoutProps) => {
           overflowY={["visible", "visible", "scroll", "scroll"]}
           bg="white"
           border="2px solid"
-          boxShadow="inset 0 0 2px #333333"
+          boxShadow="inset 0 0 3px black"
           my="24px"
           p="14px"
           sx={{
             "::-webkit-scrollbar": {
-              width: "6px",
+              width: "10px",
             },
             "::-webkit-scrollbar-thumb": {
               background: "black",
               borderRadius: "10px",
-              border: "2px solid white",
+              border: "4px solid transparent",
+              backgroundClip: "padding-box",
             },
           }}
         >

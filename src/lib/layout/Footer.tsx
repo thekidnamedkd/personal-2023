@@ -30,7 +30,12 @@ const Footer = () => {
           </Link>
         </Text>
       </HStack>
-      <HStack marginLeft="auto" align="center" justify="space-between">
+      <HStack
+        marginLeft="auto"
+        align="center"
+        justify="space-between"
+        mt="12px"
+      >
         <Link
           href="https://github.com/thekidnamedkd"
           target="_blank"

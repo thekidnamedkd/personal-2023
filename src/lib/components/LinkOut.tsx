@@ -25,7 +25,7 @@ const LinkOut = ({ href, title, description, tools }: Props) => {
       )}
       {tools && (
         <Text fontSize={["sm", null, null, "md"]} pl="30px" lineHeight="1.5">
-          ↪&nbsp;&nbsp;&nbsp;{tools}
+          ∿&nbsp;&nbsp;&nbsp;{tools}
         </Text>
       )}
     </Box>

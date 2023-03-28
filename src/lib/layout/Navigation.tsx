@@ -1,5 +1,5 @@
 import { Button, HStack } from "@chakra-ui/react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Navigation = () => {
   const navigate = useNavigate();
@@ -21,14 +21,14 @@ const Navigation = () => {
         Work
       </Button>
       <Button
-        onClick={() => navigate("/reading")}
+        onClick={() => navigate("/snapshot")}
         border={
-          location.pathname === "/reading"
+          location.pathname === "/snapshot"
             ? "2px solid black"
             : "1px solid black"
         }
       >
-        Reading
+        Snapshot
       </Button>
     </HStack>
   );

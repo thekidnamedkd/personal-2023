@@ -63,7 +63,7 @@ const Snapshot = () => {
         />
         <LinkOut
           href="https://so-far.xyz/contributors/yin-aiwen"
-          title="ON PLATFORM DESIGN, PART I-V"
+          title="YIN AIWEN - ON PLATFORM DESIGN, PART I-V"
         />
         <LinkOut
           href="https://github.com/public-assembly"

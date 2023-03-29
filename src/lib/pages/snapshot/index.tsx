@@ -48,6 +48,28 @@ const Snapshot = () => {
           title="NO SKIPS with Jinx and Shea - Lil' Kim 'Hard Core' | Vol. 1 Ep. 3"
         />
       </ListCluster>
+      <ListCluster title="Around">
+        <LinkOut
+          href="https://youtu.be/NDC7tZv9E6M"
+          title="Was ist die c-base?"
+        />
+        <LinkOut
+          href="https://folklore.mirror.xyz/Urj78CpaE8_flb0hUj_1AOGfSevCL9ysqob3pa_JHIM"
+          title="Folklore (Rafa) - The Sequence"
+        />
+        <LinkOut
+          href="https://youtu.be/oiDKH4tJmmI"
+          title="Okay Kaya - Spinal Tap (Official Video)"
+        />
+        <LinkOut
+          href="https://so-far.xyz/contributors/yin-aiwen"
+          title="ON PLATFORM DESIGN, PART I-V"
+        />
+        <LinkOut
+          href="https://github.com/public-assembly"
+          title="Public Assembly Github Repo"
+        />
+      </ListCluster>
     </>
   );
 };

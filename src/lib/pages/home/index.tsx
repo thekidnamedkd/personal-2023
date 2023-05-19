@@ -11,7 +11,7 @@ const Home = () => {
           href="https://launch.seedclub.xyz/"
           title="Seed Club: Launch"
           description="DAO launch platform based on Nouns Builder, Public Assembly tooling"
-          tools="Next.js, React Query, SIWE, Apollo, GQL"
+          tools="Next.js, Docker, React Query, SIWE, Apollo, GQL"
         />
         <LinkOut
           href="https://members.seedclub.xyz/"
@@ -34,8 +34,8 @@ const Home = () => {
       </ListCluster>
       <ListCluster title="Lately">
         <LinkOut
-          href="https://cryptosociety.notion.site/Crypto-Culture-Society-6a8dd5ee05b04684998b5206ae842195"
-          title="Crypto, Culture & Society DAO Member"
+          href="https://www.public---assembly.com/about"
+          title="Public Assembly DAO Contributor"
         />
         <LinkOut
           href="https://cryptosociety.notion.site/Crypto-Culture-Society-6a8dd5ee05b04684998b5206ae842195"
@@ -56,7 +56,7 @@ const Home = () => {
       </ListCluster>
       <ListCluster title="Less Lately">
         <LinkOut
-          href="https://cryptosociety.notion.site/Crypto-Culture-Society-6a8dd5ee05b04684998b5206ae842195"
+          href="https://www.kampgrizzly.com/"
           title="Kamp Grizzly Production Assistant"
         />
         <LinkOut

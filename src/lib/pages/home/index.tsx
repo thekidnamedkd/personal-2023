@@ -6,6 +6,14 @@ import ListCluster from "lib/components/ListCluster";
 const Home = () => {
   return (
     <VStack flexDirection="column" align="start" spacing="5">
+      <ListCluster title="Now">
+        <LinkOut
+          href="https://www.onvessel.world/"
+          title="Vessel"
+          description="A web3 Brand Strategy Platform"
+          tools="Next.js, SWR, Prisma, Posgres (Supabase), Tailwind, GraphQL, Zod, React Hook Form"
+        />
+      </ListCluster>
       <ListCluster title="Most Recent">
         <LinkOut
           href="https://launch.seedclub.xyz/"

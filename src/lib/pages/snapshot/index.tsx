@@ -1,9 +1,10 @@
+import { VStack } from "@chakra-ui/react";
 import LinkOut from "lib/components/LinkOut";
 import ListCluster from "lib/components/ListCluster";
 
 const Snapshot = () => {
   return (
-    <>
+    <VStack flexDirection="column" align="start" spacing="5">
       <ListCluster title="Reading List">
         <LinkOut
           href="https://www.goodreads.com/book/show/11320.The_Captain_s_Verses"
@@ -70,7 +71,7 @@ const Snapshot = () => {
           title="Public Assembly Github Repo"
         />
       </ListCluster>
-    </>
+    </VStack>
   );
 };
 

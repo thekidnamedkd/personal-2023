@@ -11,7 +11,13 @@ const Home = () => {
           href="https://www.onvessel.world/"
           title="Vessel"
           description="A web3 Brand Strategy Platform"
-          tools="Next.js, SWR, Prisma, Posgres (Supabase), Tailwind, GraphQL, Zod, React Hook Form"
+          tools="Next.js 13, SWR, Prisma, Posgres (Supabase), Tailwind, GraphQL, Zod, React Hook Form"
+        />
+        <LinkOut
+          href="https://irr.vercel.app/"
+          title="IRR"
+          description="Onchain Portfolio Tracker for Uniswap V3 LPs"
+          tools="Uniswap SDK, Next.js 13, Tailwind, Radix, CVA"
         />
       </ListCluster>
       <ListCluster title="Most Recent">

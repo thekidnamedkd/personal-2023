@@ -15,9 +15,9 @@ const Home = () => {
         />
         <LinkOut
           href="https://irr.vercel.app/"
-          title="IRR"
+          title="IRR Prototype"
           description="Onchain Portfolio Tracker for Uniswap V3 LPs"
-          tools="Uniswap SDK, Next.js 13, Tailwind, Radix, CVA"
+          tools="Uniswap SDK, Next.js 13, React Context API, Tailwind, Radix, CVA"
         />
       </ListCluster>
       <ListCluster title="Most Recent">

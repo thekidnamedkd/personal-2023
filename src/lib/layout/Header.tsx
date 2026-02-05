@@ -2,17 +2,17 @@ import {
   Box,
   Button,
   Flex,
-  HStack,
   Heading,
+  HStack,
   Image,
   Link,
   Spacer,
   Text,
   VStack,
-  keyframes,
 } from "@chakra-ui/react";
+import { keyframes } from "@emotion/react";
 import _ from "lodash";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import useGasQuery from "../../utils/useGasQuery";
@@ -30,18 +30,18 @@ const Header = () => {
     setLastGas(currentGas);
   }, [currentGas]);
 
-  const triggerRipple = () => {
+  const triggerRipple = useCallback(() => {
     setRipple(true);
     setTimeout(() => {
       setRipple(false);
     }, 3000);
-  };
+  }, []);
 
   useEffect(() => {
     if (currentGas && currentGas !== lastGas) {
       triggerRipple();
     }
-  }, [currentGas, lastGas]);
+  }, [currentGas, lastGas, triggerRipple]);
 
   const rippleAnimation = keyframes`
     0% { color: black; }

@@ -1,4 +1,4 @@
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 
 const useGasQuery = () => {
   const gasQuery = async () => {
@@ -9,12 +9,12 @@ const useGasQuery = () => {
     return response.json();
   };
 
-  const { isLoading, isFetching, isError, error, data } = useQuery(
-    ["gasQuery"],
-    gasQuery
-  );
+  const { isPending, isFetching, isError, error, data } = useQuery({
+    queryKey: ["gasQuery"],
+    queryFn: gasQuery,
+  });
 
-  return { isLoading, isFetching, isError, error, data };
+  return { isLoading: isPending, isFetching, isError, error, data };
 };
 
 export default useGasQuery;

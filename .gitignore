@@ -13,3 +13,6 @@ yarn-error.log*
 .turbo
 
 .vscode
+
+# Claude Code
+.claude

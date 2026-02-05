@@ -8,9 +8,8 @@
  * - https://reactrouter.com/docs/en/v6/upgrading/v5#note-on-link-to-values
  */
 
-import { Routes, Route } from "react-router-dom";
-
 import Page404 from "lib/pages/404";
+import { Route, Routes } from "react-router-dom";
 
 import { routes } from "./routes";
 

@@ -1,1 +1,1 @@
-yarn lint:turbo
+pnpm lint:turbo

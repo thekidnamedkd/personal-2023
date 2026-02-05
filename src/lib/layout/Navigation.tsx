@@ -1,36 +1,34 @@
-import { Button, HStack } from "@chakra-ui/react";
 import { useLocation, useNavigate } from "react-router-dom";
+
+import Button from "../components/ui/Button";
 
 const Navigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
   return (
-    <HStack
-      mt={["24px", null, null, null]}
-      alignItems="end"
-      justifyContent="right"
-      w={["100%", null, null, "min-content"]}
-    >
+    <div className="mt-6 flex w-full items-end justify-end gap-2 lg:w-min">
       <Button
         onClick={() => navigate("/")}
-        border={
-          location.pathname === "/" ? "2px solid black" : "1px solid black"
+        className={
+          location.pathname === "/"
+            ? "border-2 border-black"
+            : "border border-black"
         }
       >
         Work
       </Button>
       <Button
         onClick={() => navigate("/snapshot")}
-        border={
+        className={
           location.pathname === "/snapshot"
-            ? "2px solid black"
-            : "1px solid black"
+            ? "border-2 border-black"
+            : "border border-black"
         }
       >
         Snapshot
       </Button>
-    </HStack>
+    </div>
   );
 };
 

@@ -1,4 +1,3 @@
-import { VStack } from "@chakra-ui/react";
 import type { ReactNode } from "react";
 
 import ListHeading from "./ListHeading";
@@ -10,10 +9,10 @@ type Props = {
 
 const ListCluster = ({ children, title }: Props) => {
   return (
-    <VStack alignItems="start" spacing="0">
+    <div className="flex flex-col items-start gap-0">
       <ListHeading>{title}</ListHeading>
       {children}
-    </VStack>
+    </div>
   );
 };
 

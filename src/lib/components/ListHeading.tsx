@@ -1,4 +1,3 @@
-import { Heading } from "@chakra-ui/react";
 import type { ReactNode } from "react";
 
 type Props = {
@@ -6,11 +5,7 @@ type Props = {
 };
 
 const ListHeading = ({ children }: Props) => {
-  return (
-    <Heading fontSize={["xl", null, null, "3xl"]} mb="12px">
-      {children}
-    </Heading>
-  );
+  return <h2 className="mb-3 text-lg lg:text-2xl">{children}</h2>;
 };
 
 export default ListHeading;

@@ -1,4 +1,3 @@
-import { HStack, Icon, Link, Text } from "@chakra-ui/react";
 import {
   RiGithubFill,
   RiMailLine,
@@ -11,78 +10,64 @@ import { ArenaIcon } from "../components/IconPack";
 const Footer = () => {
   return (
     <>
-      <HStack marginLeft="auto" align="center" justify="space-between">
-        <Text fontSize={["sm", null, null, "md"]}>
+      <div className="ml-auto flex items-center">
+        <p className="text-sm lg:text-base">
           VERCEL/DNS:{" "}
-          <Link
-            fontSize={["sm", null, null, "md"]}
-            href="https://kevin-davis.com"
-          >
+          <a className="text-sm lg:text-base" href="https://kevin-davis.com">
             kevin-davis.com
-          </Link>
-        </Text>
-      </HStack>
-      <HStack marginLeft="auto" align="center" justify="space-between">
-        <Text fontSize={["sm", null, null, "md"]}>
+          </a>
+        </p>
+      </div>
+      <div className="ml-auto flex items-center">
+        <p className="text-sm lg:text-base">
           IPFS/ENS:{" "}
-          <Link fontSize={["sm", null, null, "md"]} href="https://heykd.eth">
+          <a className="text-sm lg:text-base" href="https://heykd.eth">
             heykd.eth
-          </Link>
-        </Text>
-      </HStack>
-      <HStack
-        marginLeft="auto"
-        align="center"
-        justify="space-between"
-        mt="12px"
-      >
-        <Link
+          </a>
+        </p>
+      </div>
+      <div className="ml-auto mt-3 flex items-center justify-between gap-4">
+        <a
+          className="text-black no-underline hover:text-black"
           href="https://github.com/thekidnamedkd"
-          color="black"
-          lineHeight="0"
-          isExternal
+          target="_blank"
+          rel="noreferrer"
         >
-          <Icon
-            cursor="pointer"
-            as={RiGithubFill}
-            minW="28px"
-            w="1vw"
-            h="auto"
-          />
-        </Link>
-        <Link
+          <RiGithubFill className="h-auto w-7 min-w-[28px]" />
+        </a>
+        <a
+          className="text-black no-underline hover:text-black"
           href="https://www.twitter.com/thekidnamedkd"
-          color="black"
-          lineHeight="0"
-          isExternal
+          target="_blank"
+          rel="noreferrer"
         >
-          <Icon as={RiTwitterFill} minW="28px" w="1vw" h="auto" />
-        </Link>
-        <Link
+          <RiTwitterFill className="h-auto w-7 min-w-[28px]" />
+        </a>
+        <a
+          className="text-black no-underline hover:text-black"
           href="https://open.spotify.com/user/kidnamedkd"
-          color="black"
-          lineHeight="0"
-          isExternal
+          target="_blank"
+          rel="noreferrer"
         >
-          <Icon as={RiSpotifyFill} minW="28px" w="1vw" h="auto" />
-        </Link>
-        <Link
+          <RiSpotifyFill className="h-auto w-7 min-w-[28px]" />
+        </a>
+        <a
+          className="text-black no-underline hover:text-black"
           href="https://www.are.na/kevin-davis"
-          color="black"
-          lineHeight="0"
-          isExternal
+          target="_blank"
+          rel="noreferrer"
         >
-          <Icon as={ArenaIcon} minW="28px" w="1vw" h="auto" />
-        </Link>
-        <Link
+          <ArenaIcon className="h-auto w-7 min-w-[28px]" />
+        </a>
+        <a
+          className="text-black no-underline hover:text-black"
           href="mailto:whomst@kevind.xyz"
-          color="black"
-          lineHeight="0"
-          isExternal
+          target="_blank"
+          rel="noreferrer"
         >
-          <Icon as={RiMailLine} minW="28px" w="1vw" h="auto" />
-        </Link>
-      </HStack>
+          <RiMailLine className="h-auto w-7 min-w-[28px]" />
+        </a>
+      </div>
     </>
   );
 };

@@ -21,12 +21,18 @@
       "semicolons": "always"
     }
   },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
   "linter": {
     "enabled": true,
     "rules": {
       "recommended": true,
       "suspicious": {
-        "noConsole": "off"
+        "noConsole": "off",
+        "noUnknownAtRules": "off"
       }
     }
   },

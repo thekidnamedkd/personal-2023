@@ -10,7 +10,7 @@
       "inputs": ["biome.json", "src/**"]
     },
     "type-check": {
-      "outputs": ["*.tsbuildinfo"]
+      "outputs": []
     }
   }
 }

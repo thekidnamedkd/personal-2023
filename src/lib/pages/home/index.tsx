@@ -1,11 +1,9 @@
-import { VStack } from "@chakra-ui/react";
-
 import LinkOut from "lib/components/LinkOut";
 import ListCluster from "lib/components/ListCluster";
 
 const Home = () => {
   return (
-    <VStack flexDirection="column" align="start" spacing="5">
+    <div className="flex flex-col items-start gap-5">
       <ListCluster title="Now">
         <LinkOut
           href="https://www.onvessel.world/"
@@ -85,7 +83,7 @@ const Home = () => {
           title="National Publicist & Artist Manager"
         />
       </ListCluster>
-    </VStack>
+    </div>
   );
 };
 

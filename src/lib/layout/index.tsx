@@ -1,4 +1,3 @@
-import { Box, Flex } from "@chakra-ui/react";
 import type { ReactNode } from "react";
 
 import Footer from "./Footer";
@@ -11,66 +10,19 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <Box
-      position="absolute"
-      top="50%"
-      left="50%"
-      transform="translate(-50%, -50%)"
-    >
+    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
       <Meta />
-      <Flex
-        justifyContent="space-between"
-        alignItems="start"
-        flexDirection="column"
-        overflowY="scroll"
-        sx={{
-          "::-webkit-scrollbar": {
-            width: "10px",
-          },
-          "::-webkit-scrollbar-thumb": {
-            background: "black",
-            borderRadius: "10px",
-            border: "4px solid transparent",
-            backgroundClip: "padding-box",
-          },
-        }}
-        w={["93vw", "90vw", null, "82vw"]}
-        h={["95vh", "90vh", null, "82vh"]}
-        border="2px solid"
-        borderRadius="3px"
-        p="24px"
-        bg="#dddddd"
-        boxShadow="dark-lg"
-      >
+      <div className="retro-scrollbar flex h-[95vh] w-[93vw] flex-col items-start justify-between overflow-y-scroll rounded-[3px] border-2 border-black bg-[#dddddd] p-6 shadow-[0_6px_0_rgba(0,0,0,0.12)] sm:h-[90vh] sm:w-[90vw] lg:h-[82vh] lg:w-[82vw]">
         <Header />
-        <Box
+        <main
           id="#"
-          width="full"
-          height={["min-content", "min-content", "full", "full"]}
-          as="main"
-          overflowY={["visible", "visible", "scroll", "scroll"]}
-          bg="white"
-          border="2px solid"
-          boxShadow="inset 0 0 2px black"
-          my="24px"
-          p="14px"
-          sx={{
-            "::-webkit-scrollbar": {
-              width: "10px",
-            },
-            "::-webkit-scrollbar-thumb": {
-              background: "black",
-              borderRadius: "10px",
-              border: "4px solid transparent",
-              backgroundClip: "padding-box",
-            },
-          }}
+          className="retro-scrollbar my-6 h-min w-full overflow-y-visible border-2 border-black bg-white p-[14px] shadow-[inset_0_0_2px_black] md:h-full md:overflow-y-scroll"
         >
           {children}
-        </Box>
+        </main>
         <Footer />
-      </Flex>
-    </Box>
+      </div>
+    </div>
   );
 };
 

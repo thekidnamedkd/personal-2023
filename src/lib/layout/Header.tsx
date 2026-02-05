@@ -1,30 +1,22 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  HStack,
-  Image,
-  Link,
-  Spacer,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
-import { keyframes } from "@emotion/react";
 import _ from "lodash";
 import { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import useGasQuery from "../../utils/useGasQuery";
 
+import Button from "../components/ui/Button";
 import Navigation from "./Navigation";
 
 const Header = () => {
-  const [lastGas, setLastGas] = useState(0);
+  const [lastGas, setLastGas] = useState<number | null>(null);
   const [ripple, setRipple] = useState(false);
   const navigate = useNavigate();
   const { data: gasPrice } = useGasQuery();
-  const currentGas = Number(_.get(gasPrice, "result.ProposeGasPrice"));
+  const gasValue = _.get(gasPrice, "result.ProposeGasPrice");
+  const gasNumber = Number(gasValue);
+  const currentGas = Number.isFinite(gasNumber) ? gasNumber : null;
+  const formattedGas =
+    currentGas === null ? "—" : currentGas.toFixed(2).replace(/\.?0+$/, "");
 
   useEffect(() => {
     setLastGas(currentGas);
@@ -38,65 +30,51 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    if (currentGas && currentGas !== lastGas) {
+    if (currentGas !== null && lastGas !== null && currentGas !== lastGas) {
       triggerRipple();
     }
   }, [currentGas, lastGas, triggerRipple]);
 
-  const rippleAnimation = keyframes`
-    0% { color: black; }
-    25% { color: #ff4d16; text-shadow: 0 0 1px #ff4d16;}
-    50% { color: #ff4d16; text-shadow: 0 0 2px #ff4d16;}
-    75% { color: #ff4d16; text-shadow: 0 0 1px #ff4d16;}
-    100% { color: black;  }
-  `;
-
   return (
-    <Flex as="header" width="full" flexWrap="wrap">
-      <HStack>
+    <header className="flex w-full flex-wrap">
+      <div className="flex items-start">
         <Button
-          variant="none"
-          bg="none"
-          w="fit-content"
-          h="fit-content"
-          p="0"
-          border="none"
+          variant="ghost"
+          className="h-fit w-fit"
           onClick={() => navigate("/")}
         >
-          <Box boxSize="150px" h="max-content">
-            <Image src="/assets/kd_logo.png" alt="kd logo" />
-          </Box>
+          <img
+            className="h-auto w-[150px]"
+            src="/assets/kd_logo.png"
+            alt="kd logo"
+          />
         </Button>
-        <VStack pl={["12px", null, null, "24px"]} align="start">
-          <Heading size={["lg", null, null, "2xl"]}>Kevin Davis</Heading>
+        <div className="flex flex-col items-start pl-3 lg:pl-6">
+          <h2 className="text-2xl lg:text-4xl">Kevin Davis</h2>
 
-          <Link
+          <a
+            className="leading-none"
             href="https://twitter.com/thekidnamedkd"
             target="_blank"
-            lineHeight="0"
+            rel="noreferrer"
           >
-            <Heading size={["sm", null, null, "md"]}>@thekidnamedkd</Heading>
-          </Link>
-          <Box borderBottom="1px solid black" w="100%" />
-          <HStack>
-            <Text fontSize={["sm", null, null, "md"]}>
+            <h2 className="text-sm lg:text-base">@thekidnamedkd</h2>
+          </a>
+          <div className="w-full border-b border-black" />
+          <div className="flex items-center">
+            <p className="text-sm lg:text-base">
               fullstack dev, turning{" "}
-              <Box
-                as="span"
-                animation={
-                  ripple ? `${rippleAnimation} 3s ease-in-out` : undefined
-                }
-              >
-                {currentGas}
-              </Box>{" "}
+              <span className={ripple ? "gas-ripple" : undefined}>
+                {formattedGas}
+              </span>{" "}
               gwei into atoms & pixels
-            </Text>
-          </HStack>
-        </VStack>
-      </HStack>
-      <Spacer />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex-1" />
       <Navigation />
-    </Flex>
+    </header>
   );
 };
 

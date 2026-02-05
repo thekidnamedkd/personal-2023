@@ -1,4 +1,4 @@
-import { Button, Heading, VStack } from "@chakra-ui/react";
+import Button from "lib/components/ui/Button";
 import { useNavigate } from "react-router-dom";
 
 const Page404 = () => {
@@ -7,13 +7,13 @@ const Page404 = () => {
   const handleBackToHome = () => navigate("/");
 
   return (
-    <VStack>
-      <Heading>lost af</Heading>
+    <div className="flex flex-col items-start gap-4">
+      <h2 className="text-xl lg:text-3xl">lost af</h2>
 
-      <Button variant="outline" w="fit-content" onClick={handleBackToHome}>
+      <Button onClick={handleBackToHome} className="w-fit">
         return to center
       </Button>
-    </VStack>
+    </div>
   );
 };
 

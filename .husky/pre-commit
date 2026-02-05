@@ -1,2 +1,4 @@
-biome check --staged --no-errors-on-unmatched
-yarn type-check:turbo
+pnpm biome check --write src
+pnpm biome format --write src
+pnpm type-check:turbo
+git add -A

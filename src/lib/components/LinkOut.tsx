@@ -1,5 +1,3 @@
-import { Box, Link, Text } from "@chakra-ui/react";
-
 type Props = {
   href: string;
   title: string;
@@ -9,26 +7,24 @@ type Props = {
 
 const LinkOut = ({ href, title, description, tools }: Props) => {
   return (
-    <Box pb="8px">
-      <Link
-        fontFamily="Sysfont"
-        fontSize={["lg", null, null, "xl"]}
+    <div className="pb-2">
+      <a
+        className="font-heading text-lg xl:text-xl"
         href={href}
-        isExternal
+        target="_blank"
+        rel="noreferrer"
       >
         {title} ⧉
-      </Link>
+      </a>
       {description && (
-        <Text fontSize={["md", null, null, "lg"]} pl="12px">
-          {description}
-        </Text>
+        <p className="pl-3 text-base xl:text-lg">{description}</p>
       )}
       {tools && (
-        <Text fontSize={["sm", null, null, "md"]} pl="30px" lineHeight="1.5">
+        <p className="pl-[30px] text-sm leading-[1.5] xl:text-base">
           ∿&nbsp;&nbsp;&nbsp;{tools}
-        </Text>
+        </p>
       )}
-    </Box>
+    </div>
   );
 };
 
